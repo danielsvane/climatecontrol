@@ -10,7 +10,7 @@ int main(int argc, char *argv[ ])
 {
   QApplication app(argc, argv);
 
-  // Set then character encoding to UTF8 (for using western characters)
+  // Set the character encoding to UTF8 (for using western characters)
   QTextCodec::setCodecForCStrings(QTextCodec::codecForName("UTF-8"));
 
   // Create the main window and set the title
