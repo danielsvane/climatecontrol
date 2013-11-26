@@ -22,14 +22,28 @@ int main(int argc, char *argv[ ])
   QPushButton *manualCtrlBtn = new QPushButton("Manuel styring");
   QPushButton *showLogBtn = new QPushButton("Vis log");
 
-  // Create layout and add buttons
-  QVBoxLayout *layout = new QVBoxLayout;
-  layout->addWidget(setTempBtn);
-  layout->addWidget(manualCtrlBtn);
-  layout->addWidget(showLogBtn);
+  // Create left layout and add buttons
+  QVBoxLayout *leftLayout = new QVBoxLayout;
+  leftLayout->addWidget(setTempBtn);
+  leftLayout->addWidget(manualCtrlBtn);
+  leftLayout->addWidget(showLogBtn);
+
+  // Create temperature labels
+  QLabel targetTempLbl("30 C");
+  QLabel currentTempLbl("28 C");
+
+  // Create right layout and add temperature labels
+  QVBoxLayout *rightLayout = new QVBoxLayout;
+  rightLayout->addWidget(&targetTempLbl);
+  rightLayout->addWidget(&currentTempLbl);
+
+  // Create main layout for holding buttons to the left, and temperatures to the right
+  QHBoxLayout *mainLayout = new QHBoxLayout;
+  mainLayout->addLayout(leftLayout);
+  mainLayout->addLayout(rightLayout);
 
   // Add the layout to window, and show window
-  window->setLayout(layout);
+  window->setLayout(mainLayout);
   window->show();
 
   return app.exec();
