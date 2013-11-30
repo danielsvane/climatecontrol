@@ -6,11 +6,16 @@
 #include <QVBoxLayout>
 #include <QStackedWidget>
 #include "ControlWindow.h"
+#include "TemperatureWindow.h"
 
 class MainWindow : public QStackedWidget {
   Q_OBJECT
 
 public:
   MainWindow(QApplication *app);
+
+private slots:
+  void setTemperatureWindow();
+  void setControlWindow();
 
 };
