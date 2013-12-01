@@ -8,5 +8,5 @@ DEPENDPATH += .
 INCLUDEPATH += .
 
 # Input
-SOURCES += main.cpp MainWindow.cpp ControlWindow.cpp TemperatureWindow.cpp
-HEADERS += MainWindow.h ControlWindow.h TemperatureWindow.h
+SOURCES += main.cpp qcustomplot.cpp MainWindow.cpp ControlWindow.cpp TemperatureWindow.cpp HistoryWindow.cpp
+HEADERS += qcustomplot.h MainWindow.h ControlWindow.h TemperatureWindow.h HistoryWindow.h

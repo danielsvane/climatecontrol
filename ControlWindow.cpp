@@ -16,13 +16,13 @@ ControlWindow::ControlWindow(QStackedWidget *parent) : QWidget(){
   leftLayout->addWidget(showLogBtn);
 
   // Create temperature labels
-  QLabel targetTempLbl("30 C");
-  QLabel currentTempLbl("28 C");
+  QLabel *targetTempLbl = new QLabel("30 C");
+  QLabel *currentTempLbl = new QLabel("28 C");
 
   // Create right layout and add temperature labels
   QVBoxLayout *rightLayout = new QVBoxLayout;
-  rightLayout->addWidget(&targetTempLbl);
-  rightLayout->addWidget(&currentTempLbl);
+  rightLayout->addWidget(targetTempLbl);
+  rightLayout->addWidget(currentTempLbl);
 
   // Create main layout for holding buttons to the left, and temperatures to the right
   QHBoxLayout *mainLayout = new QHBoxLayout;

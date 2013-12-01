@@ -7,6 +7,7 @@
 #include <QStackedWidget>
 #include "ControlWindow.h"
 #include "TemperatureWindow.h"
+#include "HistoryWindow.h"
 
 class MainWindow : public QStackedWidget {
   Q_OBJECT

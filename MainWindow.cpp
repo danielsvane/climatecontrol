@@ -4,7 +4,9 @@ MainWindow::MainWindow(QApplication *app) : QStackedWidget(){
 
   ControlWindow *controlWindow = new ControlWindow(this);
   TemperatureWindow *temperatureWindow = new TemperatureWindow(this);
+  HistoryWindow *historyWindow = new HistoryWindow(this);
 
+  this->addWidget(historyWindow);
   this->addWidget(controlWindow);
   this->addWidget(temperatureWindow);
 
