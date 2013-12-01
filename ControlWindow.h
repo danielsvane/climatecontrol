@@ -5,6 +5,7 @@
 #include <QHBoxLayout>
 #include <QVBoxLayout>
 #include <QStackedWidget>
+#include <QSizePolicy>
 
 class ControlWindow : public QWidget {
   Q_OBJECT

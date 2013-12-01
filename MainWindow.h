@@ -18,5 +18,6 @@ public:
 private slots:
   void setTemperatureWindow();
   void setControlWindow();
+  void setHistoryWindow();
 
 };

@@ -1,8 +1,6 @@
 #include "TemperatureWindow.h"
 
 TemperatureWindow::TemperatureWindow(QStackedWidget *parent) : QWidget(){
-
-  this->setWindowTitle("Climate control");
   
   // Create buttons
   QPushButton *setTempBtn = new QPushButton("Hullo");
