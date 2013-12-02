@@ -6,11 +6,13 @@ MainWindow::MainWindow(QApplication *app) : QStackedWidget(){
   ControlWindow *controlWindow = new ControlWindow(this);
   TemperatureWindow *temperatureWindow = new TemperatureWindow(this);
   HistoryWindow *historyWindow = new HistoryWindow(this);
+  ManualWindow *manualWindow = new ManualWindow(this);
 
   // Add the windows to a "window manager"
   this->addWidget(controlWindow);
   this->addWidget(temperatureWindow);
   this->addWidget(historyWindow);
+  this->addWidget(manualWindow);
 
   this->setFixedSize(500, 300);
 
@@ -28,4 +30,8 @@ void MainWindow::setControlWindow(){
 
 void MainWindow::setHistoryWindow(){
   this->setCurrentIndex(2);
+}
+
+void MainWindow::setManualWindow(){
+  this->setCurrentIndex(3);
 }

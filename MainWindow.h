@@ -8,6 +8,7 @@
 #include "ControlWindow.h"
 #include "TemperatureWindow.h"
 #include "HistoryWindow.h"
+#include "ManualWindow.h"
 
 class MainWindow : public QStackedWidget {
   Q_OBJECT
@@ -19,5 +20,6 @@ private slots:
   void setTemperatureWindow();
   void setControlWindow();
   void setHistoryWindow();
+  void setManualWindow();
 
 };

@@ -50,5 +50,6 @@ ControlWindow::ControlWindow(QStackedWidget *parent) : QWidget(){
   // Connect "set temperature" button to change window function
   connect(setTempBtn, SIGNAL(clicked()), parent, SLOT(setTemperatureWindow()));
   connect(showLogBtn, SIGNAL(clicked()), parent, SLOT(setHistoryWindow()));
+  connect(manualCtrlBtn, SIGNAL(clicked()), parent, SLOT(setManualWindow()));
 
 }
